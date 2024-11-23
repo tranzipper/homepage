@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" type="image/png" href="/assets/images/trzp-favicon.png" sizes="40x40" />
+
+  <!-- Seo -->
+  <title>TranZipper | Opportunities Made Simple!</title>
+  <meta name="description" content="Don't worry about finding experts again, TranZipper will connect you." />
+  <meta name="twitter:title" content="TranZipper | Opportunities Made Simple!" />
+  <meta name="twitter:description" content="Don't worry about finding experts again, TranZipper will connect you." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="tz:title" content="TranZipper | Opportunities Made Simple!" />
+  <meta property="tz:description" content="Don't worry about finding experts again, TranZipper will connect you." />
+  <meta property="tz:type" content="website" />
+  <meta property="tz:url" content="https://www.tranzipper.com" />
+  <meta name="keywords"
+    content="TranZipper, professional marketplace, artisans in Nigeria, Nigerian service providers, business connections, hire professionals, online artisan platform, verified professionals, no shop rent, book artisans, customer reviews, skilled workers, quality services, fast connection, affordable services, reliable professionals, Nigerian business solutions, professional profiles, on-demand services, artisan reviews, professional categories, home repairs, event planning, barbers, hairdressers, community support, skill acquisition, poverty reduction, professional verification, easy registration, Nigerian artisans, local professionals, service providers in Nigeria, artisan network, customer trust, professional ratings, small business growth, connect with experts, support local businesses, professional listings, artisan solutions, business boosting plans, TranZipper community, professional opportunities, skilled professionals in Nigeria, find professionals, empower artisans, verified experts, reliable connections, seamless bookings." />
+
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <!-- fixed-top -->
+  <nav class="py-3 container" id="main_nav">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/tranzipper_logo.svg" alt="TranZipper logo" width="200" height="55"
+          class="img-fluid" />
+      </a>
+
+      <div class="menu_icon d-lg-none">
+        <img src="./assets/icons/menu-icon.svg" alt="menu icon" />
+      </div>
+
+      <ul id="mob_nav_menu" class="d-inline-flex flex-column flex-lg-row align-lg-items-center trzp_nav_menu">
+        <li class="">
+          <a href="./#how-it-works">How it works</a>
+        </li>
+        <li class="">
+          <a href="./#why-tranzipper">Why TranZipper</a>
+        </li>
+        <li class="">
+          <a href="./#allServices">All Services</a>
+        </li>
+        <li class="">
+          <a href="./#index.html#pricing">Pricing</a>
+        </li>
+        <li class="">
+          <a href="aboutUs.html">About Us</a>
+        </li>
+
+        <div class="d-flex justify-content-start">
+          <a href="mailTO:help@tranzipper.com" class="d-inline w-auto d-lg-none btn trzp_primary_btn">
+            Contact
+          </a>
+        </div>
+      </ul>
+
+      <a href="mailTO:help@tranzipper.com" class="d-none d-lg-inline-block btn trzp_primary_btn">Contact</a>
+    </div>
+  </nav>
+
+  <header class="header_section">
+    <div class="container">
+      <div class="row d-flex gap-4">
+        <div class="col-12 d-flex align-items-center">
+          <div class="text_container">
+            <h2 class="title">FAQ</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="s_p mb-5">
+    <div class="container">
+      <div class="faq_section pt-lg-5">
+        <h4 class="title text-center">Users Frequently Asked Questions</h4>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Is TranZipper free to use?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Yes, using TranZipper Marketplace to search for and connect with professionals is completely free. You
+                only pay for the services you receive directly to the professional you hire.
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                What if I’m not satisfied with the service I received?
+              </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                If you’re not satisfied with the service, we encourage you to communicate directly with the professional
+                to resolve any issues. You can also leave a detailed review to inform others of your experience. If the
+                issue is serious, please contact TranZipper support for further assistance.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                Can I hire multiple professionals at once?
+              </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Yes, you can hire multiple professionals for different services as needed. Simply search for each
+                service separately and connect with the respective professionals. TranZipper Marketplace makes it easy
+                to manage multiple tasks simultaneously.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                Are the professionals on TranZipper Marketplace vetted?
+              </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Yes, all professionals on TranZipper Marketplace undergo a vetting process to ensure they are qualified
+                and trustworthy. We review their credentials, experience, and customer feedback to maintain a high
+                standard of service on our platform.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                How do I know if a professional is available?
+              </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Every professional that isnt available doesnt show up on customer's location. However, it’s always best
+                to contact the professional directly to confirm their availability and schedule a time that works for
+                both of you.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                Can I cancel or reschedule a service?
+              </button>
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Yes, you can cancel or reschedule a service by contacting the professional directly. It’s advisable to
+                give as much notice as possible to avoid any inconvenience.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading9">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                How do I make a payment?
+              </button>
+            </h2>
+            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                For now, payments are made directly to the professional you hire through any payment method you agree
+                upon. TranZipper Marketplace does not handle payments, ensuring that transactions are simple and
+                straightforward.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading10">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                How can I ensure I’m hiring the right professional?
+              </button>
+            </h2>
+            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                To ensure you’re hiring the right professional, carefully review their profile, including their
+                qualifications, experience, and customer reviews. Don’t hesitate to ask them specific questions about
+                their services and experience during your initial contact.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading11">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                What should I do if the professional doesn’t show up?
+              </button>
+            </h2>
+            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                If a professional doesn’t show up at the agreed time, try contacting them directly to confirm their
+                status. If they are unresponsive or fail to arrive, you can report the issue to TranZipper support for
+                further assistance, and we will help resolve the situation.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading12">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                Is there customer support available if I need help?
+              </button>
+            </h2>
+            <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Yes, TranZipper Marketplace offers customer support to assist with any questions or issues you may have.
+                You can reach out to our support team through the app, website, or via email, and we’ll be happy to help
+                you navigate the platform or resolve any concerns.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+        <div class="faq_section pt-lg-5">
+          <h4 class="title text-center">Pro Frequently Asked Questions</h4>
+  
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  How do I register my business or become a Pro on the TranZipper Marketplace?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  To become a Pro on the TranZipper Marketplace:
+                  <ul class="ps-3">
+                    <li>
+                      Download the <b>TranZipper Pro app</b> from Google Play Store or App Store.
+                    </li>
+                    <li>
+                      Click "Sign Up" and follow the straightforward steps.
+                    </li>
+                    <li>
+                      Ensure you have at least one tool ready, as it's a requirement.
+                    </li>
+                    <li>
+                      Provide your personal information for verification.
+                    </li>
+                    <li>
+                      Fill in your business information accurately.
+                    </li>
+  
+                  </ul> 
+                  The process is quick and will take just 2–3 minutes.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Is the business or Pro registration free on the TranZipper Pro app?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Yes, registrationis free
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  Do I need to be good with technology to become a Pro?
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  No, TranZipper Maketplace sign-up process is simple and user-friendly. If you need help, you can ask a friend or family member to assist you.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  Can I update my services and prices after registration?
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Yes, you can update your services, prices, and other details at any time through your profile settings. Keeping your information current ensures customers have accurate expectations and helps attract the right clients.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  What should I do if a customer leaves a negative review?
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  If you receive a negative review, respond professionally and courteously. Address the customer's concerns, offer to resolve the issue, and use the feedback to improve your services. Handling criticism well can maintain your reputation.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                  What types of businesses can join TranZipper Marketplace?
+                </button>
+              </h2>
+              <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  TranZipper Marketplace welcomes a wide range of service providers, including artisans, freelancers, and small business owners across various industries such as home maintenance, body care, event planning, and more. See all services
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                  How are payments handled on TranZipper Marketplace?
+                </button>
+              </h2>
+              <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Payments are arranged directly between you and the customer. Ensure you discuss payment terms clearly before starting the job to avoid any misunderstandings. TranZipper does not take a commission from your earnings.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading9">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                  How do I track my bookings and customer interactions?
+                </button>
+              </h2>
+              <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  You can manage your bookings and customer interactions through your TranZipper dashboard. The platform allows you to keep track of all your jobs, communications, and customer details in one place, helping you stay organized and efficient.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading10">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                  How can I boost my business on TranZipper?
+                </button>
+              </h2>
+              <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  You can enhance your visibility with a boost subscription: Gold, Silver and Bronze. Alternatively, you can choose to use the app for free.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading11">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                  How do I stand out from other professionals on TranZipper?
+                </button>
+              </h2>
+              <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Stand out by providing detailed, accurate service descriptions, using high-quality images, maintaining a professional demeanor, and consistently delivering excellent results. Collecting glowing reviews and highlighting unique skills or services can give you an edge over competitors.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading12">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                  Is there customer support available if I need help?
+                </button>
+              </h2>
+              <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Yes, TranZipper Marketplace offers customer support to assist with any questions or issues you may have.
+                  You can reach out to our support team through the app, website, or via email, and we’ll be happy to help
+                  you navigate the platform or resolve any concerns.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        <div class="become_station">
+          <div class="row">
+            <div class="col-12 text-center d-flex align-items-center">
+              <div class="become_station_text d-inline-flex flex-column gap-3 mx-auto">
+                <h5 class="title mb-0 px-lg-5 mx-lg-5">
+                  Join the <span>TranZipper Skill Community</span>
+                </h5>
+                <p class="detail mb-3 px-lg-5 mx-lg-5">
+                  The TranZipper Community is on a mission to empower Nigerians with life-changing skills
+                  and reduce poverty. Our goal is to help 20,000 people across Nigeria. These skills can
+                  transform lives, offering a steady income and opportunities to support families and
+                  communities.
+                </p>
+                <a href="#" class="btn trzp_primary_btn d-inline-flex mx-auto mb-4 mb-lg-0">
+                  Join & Support the Movement
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_trzp">
+    <div class="container">
+      <a class="d-inline-flex d-md-none mb-5" href="/">
+        <img src="./assets/images/tranzipper-Logo.png" width="228" height="61" alt="TranZipper logo" class="f_logo" />
+      </a>
+
+      <div class="row">
+        <div class="col-md-6 order-3 order-md-1">
+          <div class="d-flex flex-column gap-5">
+            <a class="d-none d-md-inline-flex" href="/">
+              <img src="./assets/images/tranzipper-Logo.png" width="228" height="61" alt="TranZipper logo"
+                class="f_logo" />
+            </a>
+
+
+
+            <div class="socials">
+              <h6 class="title mb-1">Connect with us:</h6>
+
+              <div class="d-flex align-items-center gap-2">
+                <a href="#" class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                  <img src="./assets/icons/Fb-trzp.png" alt="Connect with TranZipper on facebook" height="25" />
+                </a>
+                <a href="#" class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                  <img src="./assets/icons/X-trzp.png" alt="Connect with TranZipper on X" height="25" />
+                </a>
+                <a href="https://www.instagram.com/tranzipper/"
+                  class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                  <img src="./assets/icons/IG-trzp.png" alt="Connect with TranZipper on Instagram" height="25" />
+                </a>
+                <a href="#" class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                  <img src="./assets/icons/YouTube-trzp.png" alt="Connect with TranZipper on YouTube" height="25" />
+                </a>
+                <a href="#" class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                  <img src="./assets/icons/linkedin-trzp.png" alt="Connect with TranZipper on LinkedIn" height="25" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 order-1 order-md-2">
+          <ul class="footer_link_group">
+            <li>Company</li>
+            <li>
+              <a href="./#how-it-works"> How It Work </a>
+            </li>
+            <li>
+              <a href="./#why-tranzipper"> Why TranZipper </a>
+            </li>
+            <li>
+              <a href="./#allServices"> All Services </a>
+            </li>
+            <li>
+              <a href="./#pricing"> Pricing </a>
+            </li>
+            <li>
+              <a href="aboutUs.html">About Us </a>
+            </li>
+            <li>
+              <a href="faq.html">FAQs </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 order-2 order-md-3">
+          <ul class="footer_link_group">
+            <li>Contact</li>
+            <li>
+              <a href="tel:+2349014545346"> 09014545346 </a>
+            </li>
+            <li>
+              <div class="mail_title">Send a mail:</div>
+              <a href="mailTO:help@tranzipper.com"> help@tranzipper.com </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row footer_note d-flex align-items-center mt-3">
+        <div class="col-md-6 order-3 order-md-1">
+          <div class="detail mt-4 mt-md-0">
+            &copy; 2024. TranZipper Technologies Limited. All rights reserved
+          </div>
+        </div>
+        <div class="col-6 col-md-3 order-1 order-md-2">
+          <a href="privacy-policy.html" class="detail">Privacy </a>
+        </div>
+        <div class="col-6 d-flex justify-content-end justify-content-md-start col-md-3 order-2 order-md-3">
+          <a href="terms-and-condition.html" class="detail">Terms of use </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="faq-script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
