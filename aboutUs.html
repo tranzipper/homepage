@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="/assets/images/trzp-favicon.png" sizes="40x40" />
+
+    <!-- Seo -->
+    <title>TranZipper | Opportunities Made Simple!</title>
+    <meta name="description" content="Don't worry about finding experts again, TranZipper will connect you." />
+    <meta name="twitter:title" content="TranZipper | Opportunities Made Simple!" />
+    <meta name="twitter:description" content="Don't worry about finding experts again, TranZipper will connect you." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="tz:title" content="TranZipper | Opportunities Made Simple!" />
+    <meta property="tz:description" content="Don't worry about finding experts again, TranZipper will connect you." />
+    <meta property="tz:type" content="website" />
+    <meta property="tz:url" content="https://www.tranzipper.com" />
+    <meta name="keywords"
+        content="TranZipper, professional marketplace, artisans in Nigeria, Nigerian service providers, business connections, hire professionals, online artisan platform, verified professionals, no shop rent, book artisans, customer reviews, skilled workers, quality services, fast connection, affordable services, reliable professionals, Nigerian business solutions, professional profiles, on-demand services, artisan reviews, professional categories, home repairs, event planning, barbers, hairdressers, community support, skill acquisition, poverty reduction, professional verification, easy registration, Nigerian artisans, local professionals, service providers in Nigeria, artisan network, customer trust, professional ratings, small business growth, connect with experts, support local businesses, professional listings, artisan solutions, business boosting plans, TranZipper community, professional opportunities, skilled professionals in Nigeria, find professionals, empower artisans, verified experts, reliable connections, seamless bookings." />
+
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap"
+        rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+
+
+<body>
+    <!-- fixed-top -->
+    <nav class="py-3 container" id="main_nav">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/tranzipper_logo.svg" alt="TranZipper logo" width="200" height="55"
+                    class="img-fluid" />
+            </a>
+
+            <div class="menu_icon d-lg-none">
+                <img src="./assets/icons/menu-icon.svg" alt="menu icon" />
+            </div>
+
+            <ul id="mob_nav_menu" class="d-inline-flex flex-column flex-lg-row align-lg-items-center trzp_nav_menu">
+                <li class="">
+                    <a href="./#how-it-works">How it works</a>
+                </li>
+                <li class="">
+                    <a href="./#why-tranzipper">Why TranZipper</a>
+                </li>
+                <li class="">
+                    <a href="./#allServices">All Services</a>
+                </li>
+                <li class="">
+                    <a href="./#index.html#pricing">Pricing</a>
+                </li>
+                <li class="">
+                    <a href="aboutUs.html">About Us</a>
+                </li>
+
+                <div class="d-flex justify-content-start">
+                    <a href="mailTO:help@tranzipper.com" class="d-inline w-auto d-lg-none btn trzp_primary_btn">
+                        Contact
+                    </a>
+                </div>
+            </ul>
+
+            <a href="mailTO:help@tranzipper.com" class="d-none d-lg-inline-block btn trzp_primary_btn">Contact</a>
+        </div>
+    </nav>
+
+    <header class="header_section header_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="text_container">
+                        <h2 class="title" data-aos="fade-up" data-aos-delay="200">
+                            About Us
+                        </h2>
+                        <p class="details" data-aos="fade-up" data-aos-delay="200">
+                            At TranZipper Marketplace, we connect users to skilled professionals and business owners
+                            across Nigeria, making it fast and easy to find the services you need. Our platform enables
+                            you to access quality services without the high costs of renting physical shops, helping
+                            professionals save money and focus on their craft. By bridging the gap between service
+                            providers and customers, TranZipper reduces unemployment, offering opportunities to artisans
+                            and entrepreneurs nationwide. From bustling cities to remote towns, we serve everyone,
+                            ensuring reliable service connections wherever you are, whenever you need them.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                    <div class="img_container">
+                        <img data-aos="zoom-in" data-aos-easing="linear" data-aos-delay="500" fetchpriority="high"
+                            src="./assets/images/header-about-us.png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_sub_text">
+                <h3 class="title" data-aos="fade-up" data-aos-delay="300">
+                    OUR STORY
+                </h3>
+                <p class="details" data-aos="fade-up" data-aos-delay="300">
+                    TranZipper Marketplace was born out of a real-life challenge faced by our founder, JP Layefa, in
+                    2018. Layefa found himself struggling financially, despite being a certified photographer with a
+                    digital camera. The biggest hurdle? He didn’t have a physical shop to attract customers.
+
+                    In search of a solution, Layefa turned to Google, hoping to find an app that could connect him with
+                    potential clients. To his surprise, there was no such platform in Nigeria. Disappointed but
+                    determined, he continued to think about how he could bridge this gap.
+
+                    One day, while dressed in his Ankara attire, Layefa heard music coming from a nearby compound.
+                    Curious, he walked over, only to find that the celebration—a naming ceremony—was about to be
+                    postponed because they couldn’t find a photographer. All the local photographers were already
+                    booked. Sensing an opportunity, Layefa quickly fetched his camera, and the event went on as planned.
+
+                    Not only was he paid for his services, but he also enjoyed a plate of delicious Nigerian Jollof.
+                    That experience sparked an idea. If he could solve this problem for himself, why not create a
+                    platform that could help others too?
+
+                    From that moment, Layefa began developing the TranZipper Marketplace, focusing on user experience
+                    and making it easier for professionals and business owners to connect with customers, without the
+                    need for a physical shop. Today, TranZipper is a thriving marketplace, helping to reduce
+                    unemployment, save money on rent, and connect people across Nigeria to the services they
+                    need—quickly and efficiently.
+                </p>
+            </div>
+
+
+            <div class="header_sub_text">
+                <h3 class="title" data-aos="fade-up" data-aos-delay="300">
+                    The Founder
+                </h3>
+                <div>
+                    <div class="h_more_img" data-aos="zoom-out-up" data-aos-delay="400">
+                        <img src="./assets/images/JPLayefa.png" alt="Header TranZipper Barber" width="550" />
+                    </div>
+                </div>
+                <p class="detail" data-aos="fade-up" data-aos-delay="300">
+                    <b> JPLayefa</b>
+                </p>
+                <p class="details" data-aos="fade-up" data-aos-delay="300">
+                    The visionary founder and Chief Executive of TranZipper Technologies, has been driven by a deep
+                    commitment to building a safe and seamless ecosystem for Nigerians. His journey began at the age of
+                    15 when his father, recognizing the value of practical skills, enrolled him in a two-year computer
+                    training program. This early exposure to technology laid the foundation for his future endeavors. At
+                    19, Layefa’s father further nurtured his potential by enrolling him in photography training,
+                    instilling in him the importance of handiwork.
+
+                    With a background in Economics and Political Science, Layefa understands the challenges faced by
+                    everyday citizens and is dedicated to making life easier for them. His mission extends beyond
+                    technology; he is passionate about empowering individuals to learn valuable skills, encouraging them
+                    to pursue handiwork as a means of survival and success.
+
+                    Layefa has devoted his time and energy to creating opportunities for people to earn a living and
+                    support their families. TranZipper is a testament to his belief in a better choice for the
+                    future—one where creative minds can huddle, collaborate, and build a self-sustaining community.
+                    Under his leadership, TranZipper has become a safe haven for professionals, artisans, and business
+                    owners to flourish in their craft, transforming the marketplace and impacting lives across Nigeria.
+                </p>
+            </div>
+
+
+            <div class="header_sub_text">
+                <h3 class="title" data-aos="fade-up" data-aos-delay="300">
+                    THE CHIEF MARKETING OFFICER
+                </h3>
+                <div>
+                    <div class="h_more_img" data-aos="zoom-out-up" data-aos-delay="400">
+                        <img src="./assets/images/YayaSodiq.png" alt="Header TranZipper Barber" width="550" />
+                    </div>
+                </div>
+                <p class="detail" data-aos="fade-up" data-aos-delay="300">
+                    <b> Yaya Sodiq</b>
+                </p>
+                <p class="details" data-aos="fade-up" data-aos-delay="300">
+                    Yaya Sodiq has been instrumental in the growth and success of TranZipper Marketplace. He began his
+                    career working alongside his father in the door-building business in Epe, Lagos, where he developed
+                    a strong work ethic and an entrepreneurial spirit. Seeking to expand his knowledge, studied Cultural
+                    and Creative Arts and Social Studies in MOCPED, Epe, and later furthered his education at the
+                    University of Ibadan. His diverse background, which includes featuring in several television
+                    advertisements, reflects his versatility and commitment. As the Chief Marketing Officer of
+                    TranZipper, Yaya has been the backbone of the company’s success, contributing greatly to its
+                    strategic growth and market presence. His unwavering dedication and efforts have helped establish
+                    TranZipper as a thriving platform, making him an essential part of its continued success.
+                </p>
+
+            </div>
+    </header>
+
+
+
+
+    <footer class="footer_trzp">
+        <div class="container">
+            <a class="d-inline-flex d-md-none mb-5" href="/">
+                <img src="./assets/images/tranzipper-Logo.png" width="228" height="61" alt="TranZipper logo"
+                    class="f_logo" />
+            </a>
+
+            <div class="row">
+                <div class="col-md-6 order-3 order-md-1">
+                    <div class="d-flex flex-column gap-5">
+                        <a class="d-none d-md-inline-flex" href="/">
+                            <img src="./assets/images/tranzipper-Logo.png" width="228" height="61" alt="TranZipper logo"
+                                class="f_logo" />
+                        </a>
+
+
+
+                        <div class="socials">
+                            <h6 class="title mb-1">Connect with us:</h6>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="#"
+                                    class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                                    <img src="./assets/icons/Fb-trzp.png" alt="Connect with TranZipper on facebook"
+                                        height="25" />
+                                </a>
+                                <a href="#"
+                                    class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                                    <img src="./assets/icons/X-trzp.png" alt="Connect with TranZipper on X"
+                                        height="25" />
+                                </a>
+                                <a href="https://www.instagram.com/tranzipper/"
+                                    class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                                    <img src="./assets/icons/IG-trzp.png" alt="Connect with TranZipper on Instagram"
+                                        height="25" />
+                                </a>
+                                <a href="#"
+                                    class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                                    <img src="./assets/icons/YouTube-trzp.png" alt="Connect with TranZipper on YouTube"
+                                        height="25" />
+                                </a>
+                                <a href="#"
+                                    class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                                    <img src="./assets/icons/linkedin-trzp.png"
+                                        alt="Connect with TranZipper on LinkedIn" height="25" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 order-1 order-md-2">
+                    <ul class="footer_link_group">
+                        <li>Company</li>
+                        <li>
+                            <a href="#how-it-works"> How It Work </a>
+                        </li>
+                        <li>
+                            <a href="#why-tranzipper"> Why TranZipper </a>
+                        </li>
+                        <li>
+                            <a href="#allServices"> All Services </a>
+                        </li>
+                        <li>
+                            <a href="#pricing"> Pricing </a>
+                        </li>
+                        <li>
+                            <a href="aboutUs.html">About Us </a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FAQs </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 order-2 order-md-3">
+                    <ul class="footer_link_group">
+                        <li>Contact</li>
+                        <li>
+                            <a href="tel:+2349014545346"> 09014545346 </a>
+                        </li>
+                        <li>
+                            <div class="mail_title">Send a mail:</div>
+                            <a href="mailTO:help@tranzipper.com"> help@tranzipper.com </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row footer_note d-flex align-items-center mt-3">
+                <div class="col-md-6 order-3 order-md-1">
+                    <div class="detail mt-4 mt-md-0">
+                        &copy; 2024. TranZipper Technologies Limited. All rights reserved
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 order-1 order-md-2">
+                    <a href="privacy-policy.html" class="detail">Privacy </a>
+                </div>
+                <div class="col-6 d-flex justify-content-end justify-content-md-start col-md-3 order-2 order-md-3">
+                    <a href="terms-and-condition.html" class="detail">Terms of use </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>

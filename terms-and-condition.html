@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" type="image/png" href="/assets/images/trzp-favicon.png" sizes="40x40" />
+
+  <!-- Seo -->
+  <title>TranZipper | Opportunities Made Simple!</title>
+  <meta name="description" content="Don't worry about finding experts again, TranZipper will connect you." />
+  <meta name="twitter:title" content="TranZipper | Opportunities Made Simple!" />
+  <meta name="twitter:description" content="Don't worry about finding experts again, TranZipper will connect you." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="tz:title" content="TranZipper | Opportunities Made Simple!" />
+  <meta property="tz:description" content="Don't worry about finding experts again, TranZipper will connect you." />
+  <meta property="tz:type" content="website" />
+  <meta property="tz:url" content="https://www.tranzipper.com" />
+  <meta name="keywords"
+    content="TranZipper, professional marketplace, artisans in Nigeria, Nigerian service providers, business connections, hire professionals, online artisan platform, verified professionals, no shop rent, book artisans, customer reviews, skilled workers, quality services, fast connection, affordable services, reliable professionals, Nigerian business solutions, professional profiles, on-demand services, artisan reviews, professional categories, home repairs, event planning, barbers, hairdressers, community support, skill acquisition, poverty reduction, professional verification, easy registration, Nigerian artisans, local professionals, service providers in Nigeria, artisan network, customer trust, professional ratings, small business growth, connect with experts, support local businesses, professional listings, artisan solutions, business boosting plans, TranZipper community, professional opportunities, skilled professionals in Nigeria, find professionals, empower artisans, verified experts, reliable connections, seamless bookings." />
+
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <!-- fixed-top -->
+  <nav class="py-3 container" id="main_nav">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/tranzipper_logo.svg" alt="TranZipper logo" width="200" height="55"
+          class="img-fluid" />
+      </a>
+
+      <div class="menu_icon d-lg-none">
+        <img src="./assets/icons/menu-icon.svg" alt="menu icon" />
+      </div>
+
+      <ul id="mob_nav_menu" class="d-inline-flex flex-column flex-lg-row align-lg-items-center trzp_nav_menu">
+        <li class="">
+          <a href="./#how-it-works">How it works</a>
+        </li>
+        <li class="">
+          <a href="./#why-tranzipper">Why TranZipper</a>
+        </li>
+        <li class="">
+          <a href="./#allServices">All Services</a>
+        </li>
+        <li class="">
+          <a href="./#index.html#pricing">Pricing</a>
+        </li>
+        <li class="">
+          <a href="aboutUs.html">About Us</a>
+        </li>
+
+        <div class="d-flex justify-content-start">
+          <a href="mailTO:help@tranzipper.com" class="d-inline w-auto d-lg-none btn trzp_primary_btn">
+            Contact
+          </a>
+        </div>
+      </ul>
+
+      <a href="mailTO:help@tranzipper.com" class="d-none d-lg-inline-block btn trzp_primary_btn">Contact</a>
+    </div>
+  </nav>
+
+    <header class="header_section">
+      <div class="container">
+        <div class="row d-flex gap-4">
+          <div class="col-12 d-flex align-items-center">
+            <div class="text_container">
+              <h2 class="title">Terms and conditions</h2>
+              <p class="detail">TRANZIPPER TERMS OF SERVICE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="s_p sec">
+      <div class="container">
+        <div class="me-lg-5 mb-5">
+
+          <p class="details">
+            Effective Date: October, 2024
+          </p>
+          <h4 class="sub_title mb-4">ACCEPTANCE OF TERMS</h4>
+          <p class="details">
+            By accessing or utilizing the TranZipper Platform, you hereby agree to comply with and be bound by these Terms of Service ("Terms"), which constitute a legally binding agreement between you and TranZipper Technologies Limited ("TranZipper"). If you do not agree to these Terms, you are prohibited from using the Platform and must immediately discontinue such use.
+          </p>
+        </div>
+
+        <div class="me-lg-5 mb-5">
+          <h4 class="sub_title mb-4">DEFINITIONS AND INTERPRETATION</h4>
+          <p class="details">
+            <ul class="ps-3">
+              <li>
+                <span class="term-topic"> "Platform":  </span> Refers to the TranZipper Marketplace, including its associated websites, mobile applications, and any related services provided by TranZipper.
+              </li>
+              <li>
+                <span class="term-topic"> "User" or "You":  </span> Refers to any individual or entity accessing or utilizing the Platform, including but not limited to business owners, professionals, and customers.
+              </li>
+              <li>
+                <span class="term-topic"> Compliance with Laws: </span> Users must adhere to all applicable local, state, national, and international laws and regulations in connection with their use of the Platform, including the Nigerian Data Protection Regulation (NDPR) 2019.
+              </li>
+              
+            </ul>
+            </p>
+        </div>
+
+        <div class="me-lg-5 mb-5">
+          <h4 class="sub_title mb-4">USER OBLIGATIONS</h4>
+          <p class="details">
+            <ol>
+              <li>
+                <span class="term-topic"> Prohibited Conduct:  </span> Users shall not engage in fraudulent activities, abusive behavior, or violate applicable laws or regulations while utilizing the Platform. Any violations may result in legal action, including but not limited to civil or criminal prosecution. 
+              </li>
+              <br>
+              <li>
+                <span class="term-topic"> Compliance with Laws:  </span> Users must adhere to all applicable local, state, national, and international laws and regulations in connection with their use of the Platform, including the Nigerian Data Protection Regulation (NDPR) 2019.
+              </li>
+            </ol>
+          </p>
+        </div>
+
+        <div class="me-lg-5 mb-5">
+          <h4 class="sub_title mb-4">PROFESSIONAL RESPONSIBILITIES</h4>
+          <p class="details">
+            <ol>
+              <li>
+                <span class="term-topic"> Duty of Care: </span> Professionals are required to perform their services with due diligence and in accordance with applicable industry standards and best practices.
+              </li>
+              <br>
+              <li>
+                <span class="term-topic"> Accuracy of Information: </span> Professionals warrant that all information provided on the Platform, including but not limited to qualifications, services, and availability, is truthful, accurate, and not misleading.
+              </li>
+              <br>
+              <li>
+                <span class="term-topic"> Communication Protocols: </span> Professionals must ensure clear and timely communication with customers, particularly regarding service availability. They must manage expectations using the availability button (online/offline).
+              </li>
+              <br>
+              <li>
+                <span class="term-topic"> Pre-Contractual Agreement: </span> Professionals must ensure that all payment terms are agreed upon with the customer before rendering services. Any undisclosed fees or charges are strictly prohibited.
+              </li>
+              
+            </ol>
+        </div>
+
+        <div class="me-lg-5 mb-5">
+          <h4 class="sub_title mb-4">PAYMENTS AND FEES</h4>
+          <p class="details">
+            <ol>
+              <li>
+                <span class="term-topic"> Payment Processing: </span> All payments for services related to boosting business visibility (Gold, Silver, Bronze) on the Platform are processed through TranZipper Technologies and are non-refundable.
+              </li>
+              <br>
+              <li>
+                <span class="term-topic"> Transaction Verification: </span> Users must verify the accuracy of all transaction amounts and reference numbers before confirming payments.
+              </li>
+              <br>
+              <li>
+                <span class="term-topic"> Irrevocability: </span> Payments for business boosting, TranZipper IDs, and badges are final, non-cancellable, and non-amendable.
+              </li>
+              <br>
+              <li>
+                <span class="term-topic"> Refill Transactions: </span> Users must contact service providers directly to resolve any disputes related to refill transactions. TranZipper will not be liable for such disputes.
+              </li>
+              
+            </ol>
+          </p>
+        </div>
+
+        <div class="me-lg-5 mb-5">
+          <h4 class="sub_title mb-4">DISPUTE RESOLUTION</h4>
+          <p class="details">
+            <ol>
+              <li>
+                <span class="term-topic"> Fraud and Legal Violations: </span> TranZipper reserves the right to investigate and pursue legal action for suspected fraud or other violations of applicable laws.
+              </li>
+              <br>
+              <li>
+                <span class="term-topic"> Mediation and Arbitration: </span> In the event of a dispute arising from or related to the Platform, parties shall first attempt mediation facilitated by TranZipper or a neutral third party. If mediation fails, the dispute shall be submitted to binding arbitration in accordance with the Arbitration and Conciliation Act, Cap A18, Laws of the Federation of Nigeria.
+              </li>
+
+            </ol>
+          </p>
+        </div>
+
+        <div class="me-lg-5 mb-5">
+          <h4 class="sub_title mb-4">
+            DATA PROTECTION AND PRIVACY
+          </h4>
+          <p class="details">
+            <ol>
+              <li>
+                <span class="term-topic"> Compliance with NDPR: </span> All personal data collected by TranZipper is processed in accordance with the Nigerian Data Protection Regulation (NDPR) 2019. Users consent to the collection, use, and processing of their personal data as described in TranZipper's Privacy Policy.
+              </li>
+              <br>
+              <li>
+                <span class="term-topic"> User Content: </span> Users may post content, including but not limited to text, photos, and videos ("User Content"). By doing so, Users grant TranZipper a worldwide, perpetual, irrevocable, and royalty-free license to use, modify, adapt, and share such content for legitimate business purposes.
+              </li>
+              <br>
+              <li>
+                <span class="term-topic"> Confidentiality of Communications: </span> Private communications between Users are treated as confidential and will not be used for advertising purposes.
+              </li>
+              
+              
+            </ol>
+          </p>
+        </div>
+
+        <div class="me-lg-5 mb-5">
+          <h4 class="sub_title mb-4">INTELLECTUAL PROPERTY RIGHTS</h4>
+          <p class="details">
+            All content, trademarks, service marks, logos, and other intellectual property displayed on the Platform ("TranZipper Content") are the exclusive property of TranZipper Technologies Limited and are protected by applicable copyright, trademark, and other intellectual property laws. Unauthorized use of TranZipper Content is prohibited and may result in legal action.
+          </p>
+        </div>
+
+        <div class="me-lg-5 mb-5">
+          <h4 class="sub_title mb-4">DISCLAIMERS AND WARRANTIES</h4>
+          <p class="details">
+            <ol>
+              <li>
+                <span class="term-topic"> No Warranty: </span> The Platform and all services are provided "as-is" and "as-available". TranZipper disclaims all warranties, whether express, implied, statutory, or otherwise, including implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
+              </li>
+              <br>
+              <li>
+                <span class="term-topic"> Limitation of Liability: </span> TranZipper shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use of the Platform, to the fullest extent permitted by law.
+              </li>
+              
+            </ol>
+          </p>
+        </div>
+
+        <div class="me-lg-5 mb-5">
+          <h4 class="sub_title mb-4">TERMINATION OF SERVICE</h4>
+          <p class="details">
+            TranZipper reserves the right to suspend or terminate your access to the Platform at its sole discretion, with or without notice, for any reason, including but not limited to breaches of these Terms. Termination does not affect accrued rights or obligations.
+          </p>
+        </div>
+
+        <div class="me-lg-5 mb-5">
+          <h4 class="sub_title mb-4">JURISDICTION AND GOVERNING LAW</h4>
+          <p class="details">
+            These Terms shall be governed by the laws of the Federal Republic of Nigeria. Any legal actions arising from these Terms shall be brought exclusively before competent courts in Nigeria.
+          </p>
+        </div>
+
+        <div class="me-lg-5 mb-5">
+          <h4 class="sub_title text-uppercase mb-4">AMENDMENTS AND MODIFICATIONS</h4>
+          <p class="details">
+            TranZipper reserves the right to amend or modify these Terms at any time. Changes will be communicated through updates posted on the Platform or by other appropriate means. Continued use of the Platform after changes take effect constitutes acceptance of the amended Terms.
+          </p>
+        </div>
+
+        <div class="me-lg-5 mb-5">
+          <h4 class="sub_title text-uppercase mb-4">INDEMNIFICATION AND RELEASE</h4>
+          <p class="details">
+            You agree to indemnify and hold harmless TranZipper Technologies Limited, its affiliates, officers, directors, employees, and agents from any claims, damages, or losses arising from your use of the Platform or violation of these Terms, including but not limited to third-party intellectual property rights.
+          </p>
+        </div>
+
+      
+      </div>
+    </section>
+
+    <footer class="footer_trzp">
+      <div class="container">
+        <a class="d-inline-flex d-md-none mb-5" href="/">
+          <img src="./assets/images/tranzipper-Logo.png" width="228" height="61" alt="TranZipper logo" class="f_logo" />
+        </a>
+  
+        <div class="row">
+          <div class="col-md-6 order-3 order-md-1">
+            <div class="d-flex flex-column gap-5">
+              <a class="d-none d-md-inline-flex" href="/">
+                <img src="./assets/images/tranzipper-Logo.png" width="228" height="61" alt="TranZipper logo"
+                  class="f_logo" />
+              </a>
+  
+  
+  
+              <div class="socials">
+                <h6 class="title mb-1">Connect with us:</h6>
+  
+                <div class="d-flex align-items-center gap-2">
+                  <a href="#" class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                    <img src="./assets/icons/Fb-trzp.png" alt="Connect with TranZipper on facebook" height="25" />
+                  </a>
+                  <a href="#" class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                    <img src="./assets/icons/X-trzp.png" alt="Connect with TranZipper on X" height="25" />
+                  </a>
+                  <a href="https://www.instagram.com/tranzipper/"
+                    class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                    <img src="./assets/icons/IG-trzp.png" alt="Connect with TranZipper on Instagram" height="25" />
+                  </a>
+                  <a href="#" class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                    <img src="./assets/icons/YouTube-trzp.png" alt="Connect with TranZipper on YouTube" height="25" />
+                  </a>
+                  <a href="#" class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                    <img src="./assets/icons/linkedin-trzp.png" alt="Connect with TranZipper on LinkedIn" height="25" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 order-1 order-md-2">
+            <ul class="footer_link_group">
+              <li>Company</li>
+              <li>
+                <a href="./#how-it-works"> How It Work </a>
+              </li>
+              <li>
+                <a href="./#why-tranzipper"> Why TranZipper </a>
+              </li>
+              <li>
+                <a href="./#allServices"> All Services </a>
+              </li>
+              <li>
+                <a href="./#pricing"> Pricing </a>
+              </li>
+              <li>
+                <a href="aboutUs.html">About Us </a>
+              </li>
+              <li>
+                <a href="faq.html">FAQs </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 order-2 order-md-3">
+            <ul class="footer_link_group">
+              <li>Contact</li>
+              <li>
+                <a href="tel:+2349014545346"> 09014545346 </a>
+              </li>
+              <li>
+                <div class="mail_title">Send a mail:</div>
+                <a href="mailTO:help@tranzipper.com"> help@tranzipper.com </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="row footer_note d-flex align-items-center mt-3">
+          <div class="col-md-6 order-3 order-md-1">
+            <div class="detail mt-4 mt-md-0">
+              &copy; 2024. TranZipper Technologies Limited. All rights reserved
+            </div>
+          </div>
+          <div class="col-6 col-md-3 order-1 order-md-2">
+            <a href="privacy-policy.html" class="detail">Privacy </a>
+          </div>
+          <div class="col-6 d-flex justify-content-end justify-content-md-start col-md-3 order-2 order-md-3">
+            <a href="terms-and-condition.html" class="detail">Terms of use </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

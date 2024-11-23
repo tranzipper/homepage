@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="/assets/images/trzp-favicon.png" sizes="40x40" />
+
+    <!-- Seo -->
+    <title>TranZipper | Opportunities Made Simple!</title>
+    <meta name="description" content="Don't worry about finding experts again, TranZipper will connect you." />
+    <meta name="twitter:title" content="TranZipper | Opportunities Made Simple!" />
+    <meta name="twitter:description" content="Don't worry about finding experts again, TranZipper will connect you." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="tz:title" content="TranZipper | Opportunities Made Simple!" />
+    <meta property="tz:description" content="Don't worry about finding experts again, TranZipper will connect you." />
+    <meta property="tz:type" content="website" />
+    <meta property="tz:url" content="https://www.tranzipper.com" />
+    <meta name="keywords"
+        content="TranZipper, professional marketplace, artisans in Nigeria, Nigerian service providers, business connections, hire professionals, online artisan platform, verified professionals, no shop rent, book artisans, customer reviews, skilled workers, quality services, fast connection, affordable services, reliable professionals, Nigerian business solutions, professional profiles, on-demand services, artisan reviews, professional categories, home repairs, event planning, barbers, hairdressers, community support, skill acquisition, poverty reduction, professional verification, easy registration, Nigerian artisans, local professionals, service providers in Nigeria, artisan network, customer trust, professional ratings, small business growth, connect with experts, support local businesses, professional listings, artisan solutions, business boosting plans, TranZipper community, professional opportunities, skilled professionals in Nigeria, find professionals, empower artisans, verified experts, reliable connections, seamless bookings." />
+
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap"
+        rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <!-- fixed-top -->
+    <nav class="py-3 container" id="main_nav">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/tranzipper_logo.svg" alt="TranZipper logo" width="200" height="55"
+                    class="img-fluid" />
+            </a>
+
+            <div class="menu_icon d-lg-none">
+                <img src="./assets/icons/menu-icon.svg" alt="menu icon" />
+            </div>
+
+            <ul id="mob_nav_menu" class="d-inline-flex flex-column flex-lg-row align-lg-items-center trzp_nav_menu">
+                <li class="">
+                    <a href="./#how-it-works">How it works</a>
+                </li>
+                <li class="">
+                    <a href="./#why-tranzipper">Why TranZipper</a>
+                </li>
+                <li class="">
+                    <a href="./#allServices">All Services</a>
+                </li>
+                <li class="">
+                    <a href="./#index.html#pricing">Pricing</a>
+                </li>
+                <li class="">
+                    <a href="aboutUs.html">About Us</a>
+                </li>
+
+                <div class="d-flex justify-content-start">
+                    <a href="mailTO:help@tranzipper.com" class="d-inline w-auto d-lg-none btn trzp_primary_btn">
+                        Contact
+                    </a>
+                </div>
+            </ul>
+
+            <a href="mailTO:help@tranzipper.com" class="d-none d-lg-inline-block btn trzp_primary_btn">Contact</a>
+        </div>
+    </nav>
+
+    <header class="header_section header_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="text_container">
+                        <h2 class="title" data-aos="fade-up" data-aos-delay="200">
+                            Welcome to the Future!
+                        </h2>
+                        <p class="detail" data-aos="fade-up" data-aos-delay="200">
+                            Never worry about finding reliable service providers again. TranZipper connects you to
+                            trusted artisans and business owners in your area, making it easy to get the job done
+                            seamlessly.
+                        </p>
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="#" target="_blank" data-aos="fade-right" data-aos-delay="200">
+                                <img src="./assets/icons/app-store-trzp.png" alt="TranZipper on App store"
+                                    fetchpriority="high" height="50" />
+                            </a>
+                            <a href="#" target="_blank" data-aos="fade-left" data-aos-delay="200">
+                                <img src="./assets/icons/google-play-trzp.png" alt="TranZipper on Google play store"
+                                    fetchpriority="high" height="50" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                    <div class="img_container">
+                        <div class="icon_1" data-aos="fade-down" data-aos-delay="1000">
+                            <img src="./assets/icons/pro-icon-trzp.png" alt="TranZipper Pro" />
+                        </div>
+                        <div class="icon_2" data-aos="fade-up" data-aos-delay="1000">
+                            <img src="./assets/icons/barber-icon-trzp.png" alt="TranZipper Barber" />
+                        </div>
+
+                        <img data-aos="zoom-in" data-aos-easing="linear" data-aos-delay="500" fetchpriority="high"
+                            src="./assets/images/header-tranzipper.png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_sub_text">
+                <h3 class="title" data-aos="fade-up" data-aos-delay="300">
+                    Seamless Service Experience.
+                </h3>
+                <p class="detail" data-aos="fade-up" data-aos-delay="300">
+                    We are the leading marketplace, connecting users with trusted professionals across various services.
+                    Ensuring that every Professional and Business on our platform is thoroughly vetted, offering you
+                    peace of mind and quality service. With TranZipper Marketplace, finding reliable, verified experts
+                    is fast, easy, and secure—making it the best choice for your service needs, anytime, anywhere.
+                </p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <ul class="offering_list">
+                    <li class="item">Search</li>
+                    <li class="item">Connect</li>
+                    <li class="item">Job Done!</li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="header_more_text">
+                        <h3 class="title" data-aos="fade-up" data-aos-delay="300">
+                            Boosting Business Success.
+                        </h3>
+                        <p class="detail" data-aos="fade-up" data-aos-delay="300">
+                            We help professionals and business owners to thrive in today’s digital
+                            marketplace—completely free. Our platform connects you with a broad customer base,
+                            increasing visibility and growth opportunities without the cost of expensive storefronts.
+                            With TranZipper, you can expand your business, reach more clients, and achieve lasting
+                            success at no cost. </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                    <div class="h_more_img" data-aos="zoom-out-up" data-aos-delay="400">
+                        <img src="./assets/images/sub-header-bg.png" alt="Header TranZipper Barber" width="550" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- How it works section -->
+    <section class="s_m" id="how-it-works">
+        <div class="container">
+            <div class="section_header">
+                <h4 class="title" data-aos="fade-up" data-aos-delay="200">
+                    How It Works For Users
+                </h4>
+            </div>
+
+            <div class="row mt-5 pt-4">
+                <div class="col-md-6 pe-lg-4">
+                    <div class="work_card" data-aos="zoom-out-right" data-aos-delay="300">
+                        <div class="d-flex align-items-center gap-4 mb-3 mb-lg-4">
+                            <span class="number">1</span>
+                            <h6 class="title mb-0" data-aos="fade-up">Download the app</h6>
+                        </div>
+
+                        <p class="detail mb-0" data-aos="fade-up">
+                            Get the Marketplace app now from the Google Play Store or the App Store. Let the app lead
+                            you to the user home page where you see lists of professions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 ps-lg-4">
+                    <div class="work_card" data-aos="zoom-out-left" data-aos-delay="300">
+                        <div class="d-flex align-items-center gap-4 mb-3 mb-lg-4">
+                            <span class="number">2</span>
+                            <h6 class="title mb-0" data-aos="fade-up">Choose any profession</h6>
+                        </div>
+
+                        <p class="detail mb-0" data-aos="fade-up">
+                            Discover a wide range of professions on the first page of TranZipper, including barbers,
+                            hairstylists, plumbers, electricians, mechanics, event planners, and more, categorized for
+                            easy navigation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 pe-lg-4">
+                    <div class="work_card" data-aos="zoom-out-right" data-aos-delay="300">
+                        <div class="d-flex align-items-center gap-4 mb-3 mb-lg-4">
+                            <span class="number">3</span>
+                            <h6 class="title mb-0" data-aos="fade-up">
+                                Professionals in your area
+                            </h6>
+                        </div>
+
+                        <p class="detail mb-0" data-aos="fade-up">
+                            View professional profiles, check reviews, see their tools, and browse photos of their
+                            previous work.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 ps-lg-4">
+                    <div class="work_card" data-aos="zoom-out-left" data-aos-delay="300">
+                        <div class="d-flex align-items-center gap-4 mb-3 mb-lg-4">
+                            <span class="number">4</span>
+                            <h6 class="title mb-0" data-aos="fade-up">Connect</h6>
+                        </div>
+
+                        <p class="detail mb-0" data-aos="fade-up">
+                            Once you’ve found a professional, reach out to them directly via phone to discuss your
+                            requirements. Negotiate the terms, pricing, and timeline that work best for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_header prohead">
+                <h4 class="title" data-aos="fade-up" data-aos-delay="200">
+                    How It Works For Pro
+                </h4>
+            </div>
+
+            <div class="row mt-5 pt-4">
+                <div class="col-md-6 pe-lg-4">
+                    <div class="work_card" data-aos="zoom-out-right" data-aos-delay="300">
+                        <div class="d-flex align-items-center gap-4 mb-3 mb-lg-4">
+                            <span class="number">1</span>
+                            <h6 class="title mb-0" data-aos="fade-up">Download the app</h6>
+                        </div>
+
+                        <p class="detail mb-0" data-aos="fade-up">
+                            Get the Marketplace Pro app now from the Google Play Store or the App Store. If you have a
+                            registered account with us sign in otherwise see step 2.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 ps-lg-4">
+                    <div class="work_card" data-aos="zoom-out-left" data-aos-delay="300">
+                        <div class="d-flex align-items-center gap-4 mb-3 mb-lg-4">
+                            <span class="number">2</span>
+                            <h6 class="title mb-0" data-aos="fade-up">Quick and Easy Registration</h6>
+                        </div>
+
+                        <p class="detail mb-0" data-aos="fade-up">
+                            Start by registering your business information on TranZipper Marketplace. The process is
+                            simple and takes just 3-5 minutes. This quick step sets the foundation for your presence on
+                            the platform. </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 pe-lg-4">
+                    <div class="work_card" data-aos="zoom-out-right" data-aos-delay="300">
+                        <div class="d-flex align-items-center gap-4 mb-3 mb-lg-4">
+                            <span class="number">3</span>
+                            <h6 class="title mb-0" data-aos="fade-up">
+                                Fast and Thorough Review
+                            </h6>
+                        </div>
+
+                        <p class="detail mb-0" data-aos="fade-up">
+                            After submitting your registration, our team will review your information within 24 hours.
+                            We ensure that all professionals meet our quality standards before going live.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 ps-lg-4">
+                    <div class="work_card" data-aos="zoom-out-left" data-aos-delay="300">
+                        <div class="d-flex align-items-center gap-4 mb-3 mb-lg-4">
+                            <span class="number">4</span>
+                            <h6 class="title mb-0" data-aos="fade-up">Go Live and Get Hired</h6>
+                        </div>
+
+                        <p class="detail mb-0" data-aos="fade-up">
+                            Once your registration is approved, your profile goes live automatically. You can start
+                            receiving customer inquiries right away. With your services now available to a broad
+                            audience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row my-5">
+                <div class="col-lg-4 col-6" data-aos="fade-right" data-aos-delay="350" data-aos-easing="linear"
+                    data-aos-duration="300">
+                    <div class="trzp_gallery_img">
+                        <img fetchpriority="high" src="./assets/images/trzp-gallery-1.png" class="img-fluid"
+                            alt="TranZipper hairdresser" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6" data-aos="fade-right" data-aos-delay="250" data-aos-easing="linear"
+                    data-aos-duration="300">
+                    <div class="trzp_gallery_img">
+                        <img fetchpriority="high" src="./assets/images/trzp-gallery-2.png" class="img-fluid"
+                            alt="TranZipper makeup" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6" data-aos="fade-right" data-aos-delay="100" data-aos-easing="linear"
+                    data-aos-duration="300">
+                    <div class="trzp_gallery_img">
+                        <img fetchpriority="high" src="./assets/images/trzp-gallery-3.png" class="img-fluid"
+                            alt="TranZipper DJ" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6" data-aos="fade-left" data-aos-delay="100" data-aos-easing="linear"
+                    data-aos-duration="300">
+                    <div class="trzp_gallery_img">
+                        <img fetchpriority="high" src="./assets/images/trzp-gallery-4.png" class="img-fluid"
+                            alt="TranZipper Car wash" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6" data-aos="fade-left" data-aos-delay="250" data-aos-easing="linear"
+                    data-aos-duration="300">
+                    <div class="trzp_gallery_img">
+                        <img fetchpriority="high" src="./assets/images/trzp-gallery-5.png" class="img-fluid"
+                            alt="TranZipper Cleaner" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6" data-aos="fade-left" data-aos-delay="350" data-aos-easing="linear"
+                    data-aos-duration="300">
+                    <div class="trzp_gallery_img">
+                        <img fetchpriority="high" src="./assets/images/trzp-gallery-6.png" class="img-fluid"
+                            alt="TranZipper Mechanic" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="why_section" id="why-tranzipper">
+                <h4 class="title mb-5">Why you should use TranZipper</h4>
+
+                <div class="row">
+                    <div class="col-lg-7 d-flex align-items-center">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="why_card d-flex align-items-center gap-3">
+                                    <div data-aos="zoom-in"
+                                        class="icon_holder d-inline-flex justify-content-center align-items-center">
+                                        <img src="./assets/icons/free-trzp.png" alt="Free" />
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <h5 class="title mb-0" data-aos="fade-up">
+                                            It’s Free
+                                        </h5>
+                                        <p class="detail mb-0" data-aos="fade-up">
+                                            TranZipper is free to use, saving you extra costs.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="why_card d-flex align-items-center gap-3">
+                                    <div data-aos="zoom-in"
+                                        class="icon_holder d-inline-flex justify-content-center align-items-center">
+                                        <img src="./assets/icons/no-rent-trzp.png" alt="No rent" />
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <h5 class="title mb-0" data-aos="fade-up"> No to Shop Rent</h5>
+                                        <p class="detail mb-0" data-aos="fade-up">
+                                            Professionals can thrive without expensive shop rent limitations. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="why_card d-flex align-items-center gap-3">
+                                    <div data-aos="zoom-in"
+                                        class="icon_holder d-inline-flex justify-content-center align-items-center">
+                                        <img src="./assets/icons/connect-trzp.png" alt="Connect" />
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <h5 class="title mb-0" data-aos="fade-up">
+                                            Connection
+                                        </h5>
+                                        <p class="detail mb-0" data-aos="fade-up">
+                                            Quickly find and book professionals with no time wasted.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="why_card d-flex align-items-center gap-3">
+                                    <div data-aos="zoom-in"
+                                        class="icon_holder d-inline-flex justify-content-center align-items-center">
+                                        <img src="./assets/icons/id-trzp.png" alt="verification" />
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <h5 class="title mb-0" data-aos="fade-up"> Verified Pros</h5>
+                                        <p class="detail mb-0" data-aos="fade-up">
+                                            All listed professionals are verified for quality and trustworthiness. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="why_card d-flex align-items-center gap-3">
+                                    <div data-aos="zoom-in"
+                                        class="icon_holder d-inline-flex justify-content-center align-items-center">
+                                        <img src="./assets/icons/street-locator-trzp.png" alt="Around you" />
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <h5 class="title mb-0" data-aos="fade-up">
+                                            Around You
+                                        </h5>
+                                        <p class="detail mb-0" data-aos="fade-up">
+                                            Discover skilled and trusted professionals close to your location. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-flex justify-content-center justify-content-lg-end">
+                        <div class="why_img_container mt-xl-5 w-100">
+                            <img src="./assets/images/ellipse.png" alt="Light ellipse" class="circle_img" />
+                            <img data-aos="zoom-in-up" data-aos-delay="300" src="./assets/images/why-tranzipper.png"
+                                alt="Why TranZipper" class="why_img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specification section -->
+    <section class="s_m" id="allServices">
+        <div class="container">
+            <div class="section_header pb-5 mb-xl-5">
+                <h4 class="title" data-aos="fade-up">All Services</h4>
+            </div>
+
+            <div class="row pt-md-5">
+                <div class="col-lg-5 order-2 order-lg-1 justify-content-center justify-content-lg-start">
+                    <div class="specs_img" data-aos="zoom-out-right" data-aos-delay="300">
+                        <img src="./assets/images/barbing.png" alt="All services" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-7 order-1 order-lg-2">
+                    <div class="specs_text" data-aos="fade-uo">
+                        <div class="title">Body Care</div>
+                        <p class="mb-0 detail">
+                            Look and feel your best with our Body Care services. Whether you need a hair stylist,
+                            barber, makeup artist, nail technician, or a pedicure and manicure, TranZipper Marketplace
+                            connects you to skilled professionals who ensure you’re well-groomed and confident for any
+                            occasion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-5 mb-5">
+                <div class="col-lg-7">
+                    <div class="specs_text">
+                        <div class="title" data-aos="fade-uo">Event and Party</div>
+                        <div class="mb-0 detail">
+                            Make every celebration unforgettable with our Event and Party services. From planning to
+                            execution, TranZipper Marketplace provides access to expert event planners, DJs, MCs,
+                            photographers, videographers, and bakers who bring your events to life with flair and
+                            professionalism.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 justify-content-center justify-content-lg-end">
+                    <div class="specs_img" data-aos="zoom-out-left" data-aos-delay="300">
+                        <img src="./assets/images/event.png" alt="Eventand Party" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row pt-md-5">
+                <div class="col-lg-5 order-2 order-lg-1 justify-content-center justify-content-lg-start">
+                    <div class="specs_img" data-aos="zoom-out-right" data-aos-delay="300">
+                        <img src="./assets/images/service_3.png" alt="Car maintenance" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-7 order-1 order-lg-2">
+                    <div class="specs_text" data-aos="fade-uo">
+                        <div class="title">Car Maintenance</div>
+                        <p class="mb-0 detail">
+                            Keep your vehicle in top condition with our Car Maintenance services. Whether you need a car
+                            wash, mechanic, battery charger, or vulcanizer, TranZipper Marketplace connects you to
+                            trusted professionals who ensure your car runs smoothly and efficiently. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-5 mb-5">
+                <div class="col-lg-7">
+                    <div class="specs_text">
+                        <div class="title" data-aos="fade-uo">Home Management</div>
+                        <div class="mb-0 detail">
+                            Maintain a perfect home with our Home Management services. From house cleaning and gutter
+                            maintenance to lawn care, carpentry, painting, plumbing, and electrical work, TranZipper
+                            Marketplace links you to experts who take care of every detail, making your home a
+                            comfortable haven.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 justify-content-center justify-content-lg-end">
+                    <div class="specs_img" data-aos="zoom-out-left" data-aos-delay="300">
+                        <img src="./assets/images/service_4.png" alt="Home Management" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-md-5">
+                <div class="col-lg-5 order-2 order-lg-1 justify-content-center justify-content-lg-start">
+                    <div class="specs_img" data-aos="zoom-out-right" data-aos-delay="300">
+                        <img src="./assets/images/service_5.png" alt="Autos Emergency" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-7 order-1 order-lg-2">
+                    <div class="specs_text" data-aos="fade-uo">
+                        <div class="title">Autos Emergency</div>
+                        <p class="mb-0 detail">
+                            Get help fast with our Autos Emergency services. Whether you’re stranded and need a towing
+                            vehicle or require panel beating services, TranZipper Marketplace connects you to reliable
+                            professionals who provide prompt and efficient assistance when you need it most.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Joint the TranZipper Comunity -->
+            <div class="become_station py-xl-1">
+                <div class="row">
+                    <div class="col-lg-7 d-flex align-items-center">
+                        <div class="become_station_text d-inline-flex flex-column gap-3">
+                            <h5 class="title mb-0" data-aos="fade-up">
+                                Join the <span>TranZipper Skill Community</span>
+                            </h5>
+                            <p class="detail mb-3" data-aos="fade-up">
+                                The TranZipper Community is on a mission to empower Nigerians with life-changing skills
+                                and reduce poverty. Our goal is to help 20,000 people across Nigeria learn handiworks
+                                like tailoring, barbering, hairdressing, event planning, and more. These skills can
+                                transform lives, offering a steady income and opportunities to support families and
+                                communities.
+
+
+
+
+
+                                <br>
+                                Your support is vital. Join us in creating a skilled and self-reliant Nigeria. Click the
+                                button to support this movement and be part of a brighter future for all!
+                            </p>
+                            <a data-aos="fade-up" href="/become-a-station.html"
+                                class="btn trzp_primary_btn d-inline-flex">
+                                Join & Support the Movement
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-flex justify-content-end justify-content-lg-end">
+                        <img src="./assets/images/tranzipper-community.png" alt="giving" class="trzp_station"
+                            fetchpriority="high" data-aos="zoom-out-left" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing section -->
+    <section class="s_m" id="pricing">
+        <div class="container">
+            <div class="plan_header text-center">
+                <h4 class="title" data-aos="fade-up">Choose Your Plan</h4>
+                <p class="detail" data-aos="fade-up">
+                    TranZipper is free for customers. We’ve designed flexible plans to suit professionals and business
+                    owners, ensuring you reach more customers and grow your business effortlessly.
+                    <span>
+                        Each plan offers unique advantages to suit your growth stage, giving you tools to connect with
+                        clients in your area and beyond. Upgrade anytime to unlock greater opportunities!
+                    </span>
+                </p>
+            </div>
+            <div class="col-lg-4 free">
+                <div data-aos="zoom-out" data-aos-delay="100" data-aos-easing="ease-in-sine"
+                    class="pricing_card d-flex justify-content-center align-items-center">
+                    <div class="d-flex flex-column gap-2 gap-xl-3">
+                        <h6 class="title">Free</h6>
+                        <h4 class="sub_title">Reaching few customers</h4>
+                        <!-- <div class="detail">1 Swap | 7 Day</div> -->
+                        <div class="detail">₦0/week</div>
+                        <div class="detail">₦0/Monthly</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-4">
+
+
+                <div class="col-lg-4">
+                    <div data-aos="zoom-out" data-aos-delay="100" data-aos-easing="ease-in-sine"
+                        class="pricing_card d-flex justify-content-center align-items-center bronze">
+                        <div class="d-flex flex-column gap-2 gap-xl-3">
+                            <h6 class="title">Bronze</h6>
+                            <h4 class="sub_title">Reaching 35% of users in your location</h4>
+                            <!-- <div class="detail">1 Swap | 7 Day</div> -->
+                            <div class="detail">₦700/week</div>
+                            <div class="detail">₦2,500/Monthly</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div data-aos="zoom-out" data-aos-delay="200" data-aos-easing="ease-in-sine"
+                        class="pricing_card uniq_card d-flex justify-content-center align-items-center">
+                        <div class="d-flex flex-column gap-2 gap-xl-3">
+                            <!-- <div class="free_trial"> 7 days free</div> -->
+                            <h6 class="title">Silver</h6>
+                            <h4 class="sub_title">Reaching 55% of users in your location</h4>
+                            <div class="detail">₦1,200/week</div>
+                            <div class="detail">₦4,500/Monthly</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div data-aos="zoom-out" data-aos-delay="300" data-aos-easing="ease-in-sine"
+                        class="pricing_card d-flex justify-content-center align-items-center gold">
+                        <div class="d-flex flex-column gap-2 gap-xl-3">
+                            <div class="icon_holder d-inline-flex align-items-center justify-content-center">
+                                <img src="./assets/icons/premium-icon.svg" alt="premium plan" />
+                            </div>
+                            <h6 class="title">Gold</h6>
+                            <h4 class="sub_title">Reaching 95% of users in your location</h4>
+                            <div class="detail">₦2,500/week</div>
+                            <div class="detail">₦9,500/Monthly</div>
+                            <!-- <div class="detail">Unlimited Swaps | 1 Year</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download section -->
+    <section class="s_m">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 d-flex align-items-center">
+                    <div class="download_text d-flex flex-column gap-5">
+                        <h3 class="title" data-aos="fade-up">
+                            Download the TranZipper Marketplace app to get started!
+                        </h3>
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="#" data-aos="zoom-out" data-aos-delay="100">
+                                <img src="./assets/icons/app-store-trzp.png" alt="TranZipper on App store"
+                                    height="50" />
+                            </a>
+                            <a href="#" target="_blank" data-aos="zoom-out" data-aos-delay="100">
+                                <img src="./assets/icons/google-play-trzp.png" alt="TranZipper on Google play store"
+                                    height="50" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 download_img_section">
+                    <div data-aos="zoom-out" data-aos-delay="100"
+                        class="d-flex justify-content-center py-5 my-lg-5 me-lg-5 gap-4 align-items-center justify-content-lg-end">
+                        <div class="mob_holder">
+                            <img src="./assets/images/tranzipper-app-screen-1.png" alt="TranZipper App screen 1" />
+                        </div>
+                        <div class="mob_holder">
+                            <img src="./assets/images/tranzipper-app-screen-3.png" alt="TranZipper App screen 3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer_trzp">
+        <div class="container">
+            <a class="d-inline-flex d-md-none mb-5" href="/">
+                <img src="./assets/images/tranzipper-Logo.png" width="228" height="61" alt="TranZipper logo"
+                    class="f_logo" />
+            </a>
+
+            <div class="row">
+                <div class="col-md-6 order-3 order-md-1">
+                    <div class="d-flex flex-column gap-5">
+                        <a class="d-none d-md-inline-flex" href="/">
+                            <img src="./assets/images/tranzipper-Logo.png" width="228" height="61" alt="TranZipper logo"
+                                class="f_logo" />
+                        </a>
+
+
+
+                        <div class="socials">
+                            <h6 class="title mb-1">Connect with us:</h6>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="#"
+                                    class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                                    <img src="./assets/icons/Fb-trzp.png" alt="Connect with TranZipper on facebook"
+                                        height="25" />
+                                </a>
+                                <a href="#"
+                                    class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                                    <img src="./assets/icons/X-trzp.png" alt="Connect with TranZipper on X"
+                                        height="25" />
+                                </a>
+                                <a href="https://www.instagram.com/tranzipper/"
+                                    class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                                    <img src="./assets/icons/IG-trzp.png" alt="Connect with TranZipper on Instagram"
+                                        height="25" />
+                                </a>
+                                <a href="#"
+                                    class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                                    <img src="./assets/icons/YouTube-trzp.png" alt="Connect with TranZipper on YouTube"
+                                        height="25" />
+                                </a>
+                                <a href="#"
+                                    class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                                    <img src="./assets/icons/linkedin-trzp.png"
+                                        alt="Connect with TranZipper on LinkedIn" height="25" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 order-1 order-md-2">
+                    <ul class="footer_link_group">
+                        <li>Company</li>
+                        <li>
+                            <a href="#how-it-works"> How It Work </a>
+                        </li>
+                        <li>
+                            <a href="#why-tranzipper"> Why TranZipper </a>
+                        </li>
+                        <li>
+                            <a href="#allServices"> All Services </a>
+                        </li>
+                        <li>
+                            <a href="#pricing"> Pricing </a>
+                        </li>
+                        <li>
+                            <a href="aboutUs.html">About Us </a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FAQs </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 order-2 order-md-3">
+                    <ul class="footer_link_group">
+                        <li>Contact</li>
+                        <li>
+                            <a href="tel:+2349014545346"> 09014545346 </a>
+                        </li>
+                        <li>
+                            <div class="mail_title">Send a mail:</div>
+                            <a href="mailTO:help@tranzipper.com"> help@tranzipper.com </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row footer_note d-flex align-items-center mt-3">
+                <div class="col-md-6 order-3 order-md-1">
+                    <div class="detail mt-4 mt-md-0">
+                        &copy; 2024. TranZipper Technologies Limited. All rights reserved
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 order-1 order-md-2">
+                    <a href="privacy-policy.html" class="detail">Privacy </a>
+                </div>
+                <div class="col-6 d-flex justify-content-end justify-content-md-start col-md-3 order-2 order-md-3">
+                    <a href="terms-and-condition.html" class="detail">Terms of use </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>

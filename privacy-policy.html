@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" type="image/png" href="/assets/images/trzp-favicon.png" sizes="40x40" />
+
+  <!-- Seo -->
+  <title>TranZipper | Opportunities Made Simple!</title>
+  <meta name="description" content="Don't worry about finding experts again, TranZipper will connect you." />
+  <meta name="twitter:title" content="TranZipper | Opportunities Made Simple!" />
+  <meta name="twitter:description" content="Don't worry about finding experts again, TranZipper will connect you." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="tz:title" content="TranZipper | Opportunities Made Simple!" />
+  <meta property="tz:description" content="Don't worry about finding experts again, TranZipper will connect you." />
+  <meta property="tz:type" content="website" />
+  <meta property="tz:url" content="https://www.tranzipper.com" />
+  <meta name="keywords"
+    content="TranZipper, professional marketplace, artisans in Nigeria, Nigerian service providers, business connections, hire professionals, online artisan platform, verified professionals, no shop rent, book artisans, customer reviews, skilled workers, quality services, fast connection, affordable services, reliable professionals, Nigerian business solutions, professional profiles, on-demand services, artisan reviews, professional categories, home repairs, event planning, barbers, hairdressers, community support, skill acquisition, poverty reduction, professional verification, easy registration, Nigerian artisans, local professionals, service providers in Nigeria, artisan network, customer trust, professional ratings, small business growth, connect with experts, support local businesses, professional listings, artisan solutions, business boosting plans, TranZipper community, professional opportunities, skilled professionals in Nigeria, find professionals, empower artisans, verified experts, reliable connections, seamless bookings." />
+
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <!-- fixed-top -->
+  <nav class="py-3 container" id="main_nav">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/tranzipper_logo.svg" alt="TranZipper logo" width="200" height="55"
+          class="img-fluid" />
+      </a>
+
+      <div class="menu_icon d-lg-none">
+        <img src="./assets/icons/menu-icon.svg" alt="menu icon" />
+      </div>
+
+      <ul id="mob_nav_menu" class="d-inline-flex flex-column flex-lg-row align-lg-items-center trzp_nav_menu">
+        <li class="">
+          <a href="./#how-it-works">How it works</a>
+        </li>
+        <li class="">
+          <a href="./#why-tranzipper">Why TranZipper</a>
+        </li>
+        <li class="">
+          <a href="./#allServices">All Services</a>
+        </li>
+        <li class="">
+          <a href="./#index.html#pricing">Pricing</a>
+        </li>
+        <li class="">
+          <a href="aboutUs.html">About Us</a>
+        </li>
+
+        <div class="d-flex justify-content-start">
+          <a href="mailTO:help@tranzipper.com" class="d-inline w-auto d-lg-none btn trzp_primary_btn">
+            Contact
+          </a>
+        </div>
+      </ul>
+
+      <a href="mailTO:help@tranzipper.com" class="d-none d-lg-inline-block btn trzp_primary_btn">Contact</a>
+    </div>
+  </nav>
+
+  <header class="header_section">
+    <div class="container">
+      <div class="row d-flex gap-4">
+        <div class="col-12 d-flex align-items-center">
+          <div class="text_container">
+            <h2 class="title">Privacy policy</h2>
+            <p class="detail">TRANZIPPER PRIVACY POLICY</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="s_p sec">
+    <div class="container">
+      <div class="me-lg-5 mb-5">
+        <p class="details">
+          Effective Date: October, 2024
+          <br /><br />
+          This Privacy Policy (“Policy”) describes how TranZipper Technologies Limited (“TranZipper,” “we,” “us,” or
+          “our”) collects, uses, discloses, and protects the personal information of its users in compliance with the
+          Nigerian Data Protection Regulation NIGERIA DATA PROTECTION REGULATION (NDPR) 2019 and other applicable
+          international privacy laws. By accessing
+          or using our services, including the TranZipper website, mobile applications, and other online services
+          (collectively, the "Platform"), you consent to the practices described in this Policy.
+        </p>
+      </div>
+
+      <div class="me-lg-5 mb-5">
+        <h4 class="sub_title mb-4">Key Terms</h4>
+
+        <p class="details">
+        <ul class="ps-3">
+          <li>
+            <span class="term-topic"> "TranZipper", "we," "us," or "our": </span> Refers to TranZipper Technologies
+            Limited, its affiliates, subsidiaries, and related entities.
+          </li>
+          <li>
+            <span class="term-topic"> "Platform": </span> Refers to all digital services provided by TranZipper,
+            including the website, mobile apps, and online services.
+          </li>
+          <li>
+            <span class="term-topic"> "Personal Data": </span> Refers to information that can identify a person,
+            directly or indirectly, including but not limited to name, email, phone number, business details, NIN, and
+            location data.
+          </li>
+          <li>
+            <span class="term-topic"> "Processing": </span> Refers to any operation performed on personal data, such as
+            collection, storage, modification, transmission, and deletion.
+          </li>
+          <li>
+            <span class="term-topic"> "User," "you," or "your": </span> Refers to individuals or entities that access
+            the Platform.
+          </li>
+          <li>
+            <span class="term-topic"> "Third Parties": </span> Includes service providers, business partners, vendors,
+            and government authorities who may receive personal data in connection with TranZipper's services.
+          </li>
+
+        </ul>
+        </p>
+      </div>
+
+      <div class="me-lg-5 mb-5">
+        <h4 class="sub_title mb-4">1. Types of Data Collected</h4>
+
+        <p class="term-head">
+          1.1 Personal Data
+        </p>
+
+        <p class="details">
+          We collect and process the following categories of personal data that you voluntarily provide when you use our
+          Platform:
+        <ul class="ps-3">
+          <li>
+            <span class="term-topic"> Identifiers: </span> Full name, business name, phone number, email address,
+            physical address, and National Identification Number (NIN).
+          </li>
+          <li>
+            <span class="term-topic"> Business Information: </span> Company details, location, and services offered.
+          </li>
+          <li>
+            <span class="term-topic"> Financial Information: </span> Bank details and payment-related information where
+            applicable.
+          </li>
+        </ul>
+        <p class="term-head bottom-head">
+          1.2 Location Data
+        </p>
+
+        <p class="details">
+          We may collect location data from your device to provide location-based services. This can include:
+        <ul class="ps-3">
+          <li>
+            <span class="term-topic"> General Location: </span> Derived from your IP address.
+          </li>
+          <li>
+            <span class="term-topic"> Precise Geolocation: </span> With your consent, collected from your device’s GPS
+            to display relevant Pros or services.
+          </li>
+
+        </ul>
+
+        <p class="term-head bottom-head">
+          1.3 Automatically Collected Data
+        </p>
+
+        <p class="details">
+          We automatically collect certain information when you use our Platform, including:
+        <ul class="ps-3">
+          <li>
+            <span class="term-topic"> Device Information: </span>  Type of device, operating system, and browser.
+          </li>
+          <li>
+            <span class="term-topic"> Usage Information: </span>  IP address, pages visited, time spent on the Platform, and interactions.
+          </li>
+
+        </ul>
+
+
+        </p>
+      </div>
+
+      <div class="me-lg-5 mb-5">
+        <h4 class="sub_title mb-4">2. Purpose of Data Collection</h4>
+
+        <p class="details">
+          TranZipper processes your personal data for the following purposes, which are lawful under the NDPR 2019:
+        </p>
+
+        <ul class="ps-3">
+          <li>
+            <span class="term-topic"> Provision of Services: </span>   To enable you to use the Platform, connect with professionals (Pros), and manage bookings.
+          </li>
+          <li>
+            <span class="term-topic"> Customer Support: </span>   To resolve queries, provide support, and improve services.
+          </li>
+          <li>
+            <span class="term-topic"> Fraud Prevention: </span>   To protect our users from fraudulent activity and ensure platform safety.
+          </li>
+          <li>
+            <span class="term-topic"> Marketing and Communication: </span>    To send promotional offers and updates (with consent), in accordance with NDPR guidelines.
+          </li>
+          <li>
+            <span class="term-topic"> Research and Development: </span>   To analyze user trends, improve services, and create new features.
+          </li>
+          <li>
+            <span class="term-topic"> Legal Compliance: </span>    To comply with legal obligations under applicable laws and regulations.
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="me-lg-5 mb-5">
+        <h4 class="sub_title mb-4">3. Data Sharing and Disclosure</h4>
+
+        <p class="term-head">
+          3.1 With Third Parties
+        </p>
+
+        <p class="details">
+          We may share your personal data with trusted third parties, such as service providers (e.g., payment processors), legal advisors, and law enforcement authorities. These third parties are required to adhere to confidentiality agreements and protect your personal data.
+        </p>
+
+        <p class="term-head bottom-head">
+          3.2 Consent-Based Sharing
+        </p>
+
+        <p class="details">
+          Where your consent is required under NDPR 2019, we will explicitly seek your permission before sharing your data with third parties for purposes beyond the service offered on our Platform.
+        </p>
+        <p class="term-head bottom-head">
+          3.3 Legal Obligations
+        </p>
+
+        <p class="details">
+          We may disclose personal data to comply with court orders, subpoenas, or requests from law enforcement agencies or regulatory authorities in line with NDPR 2019 requirements.
+        </p>
+
+        <p class="term-head bottom-head">
+          3.4 Corporate Transactions
+        </p>
+
+        <p class="details">
+          In the event of a merger, acquisition, or sale of assets, we may transfer your data to the acquiring entity, provided that they adhere to similar data protection standards.
+        </p>
+        
+      </div>
+
+      <div class="me-lg-5 mb-5">
+        <h4 class="sub_title mb-4">4. Data Storage and Security</h4>
+
+        <p class="details">
+          We take the security of your personal data seriously and implement industry-standard security measures, including encryption, access control, and regular audits. However, please note that no security system is completely impenetrable, and we cannot guarantee the absolute security of your personal data.
+        </p>
+
+        <p class="term-head">
+          4.1 Data Retention
+        </p>
+
+        <p class="details">
+          We retain your personal data for as long as necessary to fulfill the purposes for which it was collected, or as required by applicable laws. When no longer needed, your data will be securely deleted.
+        </p>
+
+      </div>
+
+      <div class="me-lg-5 mb-5">
+        <h4 class="sub_title mb-4">5. Your Rights Under NDPR 2019</h4>
+
+        <p class="details">
+          As a user under NDPR 2019, you have the following rights regarding your personal data:
+        </p>
+
+        <ul class="ps-3">
+          <li>
+            <span class="term-topic"> Right of Access: </span>    Request access to your personal data and obtain information on how it is being used.
+          </li>
+          <li>
+            <span class="term-topic"> Right to Rectification: </span>   Request corrections to any inaccurate or incomplete data.
+          </li>
+          <li>
+            <span class="term-topic"> Right to Erasure: </span>   Request the deletion of your personal data under certain conditions.
+          </li>
+          <li>
+            <span class="term-topic"> Right to Restrict Processing:  </span>    Request to limit the processing of your personal data.
+          </li>
+          <li>
+            <span class="term-topic"> Right to Data Portability:  </span>  Request the transfer of your data to another service provider in a structured format.
+          </li>
+          <li>
+            <span class="term-topic"> Right to Object:  </span>    Object to the processing of your data for marketing purposes.
+          </li>
+
+        </ul>
+        To exercise any of these rights, please contact us using the details provided in Section 9.
+
+      </div>
+
+      <div class="me-lg-5 mb-5">
+        <h4 class="sub_title mb-4">6. International Data Transfers</h4>
+
+        <p class="details">
+          Your personal data may be transferred to countries outside Nigeria, including countries with differing data protection standards. We take all necessary steps to ensure that international transfers comply with NDPR 2019 and that your data is protected during such transfers.
+        </p>
+      </div>
+
+      <div class="me-lg-5 mb-5">
+        <h4 class="sub_title mb-4">7. Cookies and Tracking Technologies</h4>
+
+        <p class="details">
+          We use cookies and similar tracking technologies to enhance user experience and gather usage data. You can adjust your browser settings to reject cookies, but some features of the Platform may not function properly without them.
+        </p>
+      </div>
+
+      <div class="me-lg-5 mb-5">
+        <h4 class="sub_title mb-4">8. Privacy of Minors</h4>
+
+        <p class="details">
+          The Platform is not intended for individuals under the age of 18. We do not knowingly collect personal data from minors. If we discover that we have collected data from a minor without parental consent, we will take steps to delete such data immediately.
+        </p>
+      </div>
+
+      <div class="me-lg-5 mb-5">
+        <h4 class="sub_title mb-4">9. Contact Information</h4>
+
+        <p class="details">
+          If you have questions or concerns regarding this Policy or wish to exercise your rights under NDPR 2019, please contact us:
+          <br />
+          <br />
+          TranZipper Technologies Limited
+          <br />
+          help@tranzipper.com
+          <br />
+          +234 9014545346
+        </p>
+      </div>
+
+      <div class="me-lg-5 mb-5">
+        <h4 class="sub_title mb-4">10. Updates to this Policy</h4>
+
+        <p class="details">
+          We reserve the right to modify this Policy as necessary to comply with changes in the law or business practices. Any changes will be posted on the Platform with an updated "Effective Date." Continued use of the Platform constitutes acceptance of any revised terms.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_trzp">
+    <div class="container">
+      <a class="d-inline-flex d-md-none mb-5" href="/">
+        <img src="./assets/images/tranzipper-Logo.png" width="228" height="61" alt="TranZipper logo" class="f_logo" />
+      </a>
+
+      <div class="row">
+        <div class="col-md-6 order-3 order-md-1">
+          <div class="d-flex flex-column gap-5">
+            <a class="d-none d-md-inline-flex" href="/">
+              <img src="./assets/images/tranzipper-Logo.png" width="228" height="61" alt="TranZipper logo"
+                class="f_logo" />
+            </a>
+
+
+
+            <div class="socials">
+              <h6 class="title mb-1">Connect with us:</h6>
+
+              <div class="d-flex align-items-center gap-2">
+                <a href="#" class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                  <img src="./assets/icons/Fb-trzp.png" alt="Connect with TranZipper on facebook" height="25" />
+                </a>
+                <a href="#" class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                  <img src="./assets/icons/X-trzp.png" alt="Connect with TranZipper on X" height="25" />
+                </a>
+                <a href="https://www.instagram.com/tranzipper/"
+                  class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                  <img src="./assets/icons/IG-trzp.png" alt="Connect with TranZipper on Instagram" height="25" />
+                </a>
+                <a href="#" class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                  <img src="./assets/icons/YouTube-trzp.png" alt="Connect with TranZipper on YouTube" height="25" />
+                </a>
+                <a href="#" class="social_icon_holder d-inline-flex align-items-center justify-content-center">
+                  <img src="./assets/icons/linkedin-trzp.png" alt="Connect with TranZipper on LinkedIn" height="25" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 order-1 order-md-2">
+          <ul class="footer_link_group">
+            <li>Company</li>
+            <li>
+              <a href="./#how-it-works"> How It Work </a>
+            </li>
+            <li>
+              <a href="./#why-tranzipper"> Why TranZipper </a>
+            </li>
+            <li>
+              <a href="./#allServices"> All Services </a>
+            </li>
+            <li>
+              <a href="./#pricing"> Pricing </a>
+            </li>
+            <li>
+              <a href="./#">About Us </a>
+            </li>
+            <li>
+              <a href="faq.html">FAQs </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 order-2 order-md-3">
+          <ul class="footer_link_group">
+            <li>Contact</li>
+            <li>
+              <a href="tel:+2349014545346"> 09014545346 </a>
+            </li>
+            <li>
+              <div class="mail_title">Send a mail:</div>
+              <a href="mailTO:help@tranzipper.com"> help@tranzipper.com </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row footer_note d-flex align-items-center mt-3">
+        <div class="col-md-6 order-3 order-md-1">
+          <div class="detail mt-4 mt-md-0">
+            &copy; 2024. TranZipper Technologies Limited. All rights reserved
+          </div>
+        </div>
+        <div class="col-6 col-md-3 order-1 order-md-2">
+          <a href="privacy-policy.html" class="detail">Privacy </a>
+        </div>
+        <div class="col-6 d-flex justify-content-end justify-content-md-start col-md-3 order-2 order-md-3">
+          <a href="terms-and-condition.html" class="detail">Terms of use </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
