@@ -1140,6 +1140,7 @@ input[type="tel"]:focus {
     }
     .footer_trzp .f_logo {
         width: 170px;
+        height: 70px;
     }
     .address {
         font-size: 0.875rem;
